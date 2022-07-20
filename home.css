@@ -8,3 +8,9 @@ body {
 .container {
   color: #413F42;
 }
+
+h2 {
+  margin-bottom: 0;
+  background-color: #ada8bb;
+  color: white
+}
