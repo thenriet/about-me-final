@@ -1,0 +1,18 @@
+.navbar {
+  justify-content: space-between;
+  background: #FFF9CA;
+}
+
+.grow {
+  transition: margin-right 2s, margin-left 2s, transform 2s;
+  transform: scale(1.5, 2);
+  margin-right: 2rem;
+  margin-left: 2rem
+}
+
+.normal {
+  transition: margin-right 2s, margin-left 2s, transform 2s;
+  transform: scale(1, 1);
+  margin-right: 0rem;
+  margin-left: 0rem
+}
