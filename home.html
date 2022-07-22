@@ -6,12 +6,14 @@
   <title>Thomas Henriet - Web développeur</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="banner.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="content.css">
   <link rel="stylesheet" href="image.css">
   <link rel="stylesheet" href="footer.css">
   <script src="nav.js" defer ></script>
@@ -21,10 +23,12 @@
 <body>
   <div class="banner full-height text-center d-flex justify-content-center">
     <h1 class="align-self-center justify-content-center">
-      <br /><br />
       Bonjour ! <br /><br />
       Je m'appelle Thomas. Je suis développeur web full stack.<br /><br />
       Faisons connaissance...<br /><br />
+      <br /><br />
+      <br /><br />
+      <i class="fa-solid fa-arrow-down-long"></i>
     </h1>
   </div>
   <nav class="navbar navbar-expand-lg sticky-top">
@@ -51,11 +55,11 @@
     </div>
   </nav>
   <div class="container">
-    <div class="about-section">
+    <div class="about-section fade-in">
       <h1 class="text-center p-5" id="about">Qui suis-je ?</h1>
-      <div class="about d-flex justify-content-center">
-        <img class="avatar" src="developer-image.jpg" alt="">
-        <p class="p-5 align-self-center">
+      <div class="about d-flex align-items-center justify-content-center">
+        <img class="avatar mx-5" src="developer-image.jpg" alt="">
+        <p class="p-5 align-self-center" style="font-size:25">
           Amiénois d'origine, j'ai déposé mes valises à Lille tout
           récemment. <br />
           Je viens de compléter une formation de
@@ -67,45 +71,92 @@
       </div>
     </div>
     <div class="skills-section d-flex flex-column">
-      <h1 class="text-center p-5" id="skills">Compétences</h1>
-      <div class="collab d-flex flex-column mb-4">
+      <h1 class="text-center p-5 fade-in" id="skills">Compétences</h1>
+      <div class="skill d-flex flex-column mb-4" id="collaboration">
         <h2 class="text-center p-3">
           Collaboration
         </h2>
-        <div class="collab-items text-center mb-4" style="font-size:40px; background-color: white;">
-          <a href="#"><i class="fab fa-github p-5" ></i></a>
-          <a href="#"><i class="fab fa-github p-5"></i></a>
-          <a href="#"><i class="fab fa-github p-5"></i></a>
+        <div class="collab-items d-flex align-items-center justify-content-around mb-5" style="font-size:40px; background-color: white;">
+          <div class="d-flex flex-column align-items-center mb-4">
+            <a href="#"><i class="fab fa-github px-5 pt-5" style="color:black"></i></a>
+            <p>Git</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4">
+            <a href="#"><i class="fa-brands fa-git-alt px-5 pt-5" style="color:orange"></i></a>
+            <p>Github</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4">
+            <a href="#"><i class="fa-brands fa-slack px-5 pt-5" style="color:powderblue"></i></a>
+            <p>Slack</p>
+          </div>
         </div>
       </div>
-      <div class="conception d-flex flex-column mb-4">
+      <div class="skill fade-in d-flex flex-column mb-4" id="conception">
         <h2 class="text-center p-3">
           Conception
         </h2>
-        <div class="conception-items text-center mb-4" style="font-size:40px; background-color: white;">
-          <a href="#"><i class="fab fa-github p-5" ></i></a>
-          <a href="#"><i class="fab fa-github p-5"></i></a>
-          <a href="#"><i class="fab fa-github p-5"></i></a>
+        <div class="conception-items d-flex align-items-center justify-content-around mb-5" style="font-size:40px; background-color: white;">
+          <div class="d-flex flex-column align-items-center mb-4">
+            <a href="#"><i class="fa-brands fa-figma px-5 pt-5" style="color:rgb(199, 86, 11)"></i></a>
+            <p>Figma</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4">
+            <a href="#"><i class="fa-solid fa-database px-5 pt-5" style="color:orange"></i></a>
+            <p>SQL</p>
+          </div>
+
         </div>
       </div>
-      <div class="dev d-flex flex-column mb-4">
+      <div class="skill fade-in d-flex flex-column mb-5" id="dev">
         <h2 class="text-center p-3">
           Développement
         </h2>
-        <div class="dev-items text-center mb-4" style="font-size:40px; background-color: white;">
-          <a href="#"><i class="fab fa-github p-5" ></i></a>
-          <a href="#"><i class="fab fa-github p-5"></i></a>
-          <a href="#"><i class="fab fa-github p-5"></i></a>
+        <div class="dev-items d-flex flex-wrap align-items-center justify-content-around mb-4" style="font-size:40px; background-color: white;">
+          <div class="d-flex flex-column align-items-center mb-4 mx-5 ">
+            <a href="#"><i class="fa-brands fa-html5 px-5 pt-5" style="color:rgb(207, 63, 27)"></i></a>
+            <p>HTML</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4 mx-5">
+            <a href="#"><i class="fa-brands fa-css3-alt px-5 pt-5" style="color:rgb(9, 49, 122)"></i></a>
+            <p>CSS</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4 mx-5">
+            <a href="#"><i class="fa-brands fa-js px-5 pt-5" style="color:rgb(199, 172, 23)"></i></a>
+            <p>Javascript</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4 mx-5">
+            <a href="#"><i class="fa-brands fa-react px-5 pt-5" style="color:rgb(9, 164, 236)"></i></a>
+            <p>React</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4 mx-5">
+            <a href="#"><i class="fa-solid fa-gem px-5 pt-5" style="color:rgb(180, 46, 5)"></i></a>
+            <p>Ruby</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4 mx-5">
+            <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg"
+              style="height: 90px; padding-top: 3rem; padding-right: 3rem; padding-left: 3rem;"/></a>
+            <p>Rails</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4 mx-5">
+            <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" style="height: 90px; padding-top: 3rem; padding-right: 3rem; padding-left: 3rem;" /></a>
+            <p>PostgreSQL</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mb-4 mx-5">
+            <a href="#"><i class="fa-brands fa-bootstrap px-5 pt-5" style="color:#7836F9"></i></a>
+            <p>Bootstrap</p>
+          </div>
         </div>
       </div>
-      <div class="production d-flex flex-column mb-4">
+      <div class="skill fade-in d-flex flex-column mb-4" id="prod">
         <h2 class="text-center p-3">
           Production
         </h2>
-        <div class="production-items text-center mb-4" style="font-size:40px; background-color: white;">
-          <a href="#"><i class="fab fa-github p-5" ></i></a>
-          <a href="#"><i class="fab fa-github p-5"></i></a>
-          <a href="#"><i class="fab fa-github p-5"></i></a>
+        <div class="production-items d-flex align-items-center justify-content-around mb-4" style="font-size:40px; background-color: white;">
+          <div class="d-flex flex-column align-items-center justify-content-center mb-4">
+            <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
+              style="height: 90px; padding-top: 3rem; padding-right: 3rem; padding-left: 3rem;" /></a>
+            <p>Heroku</p>
+          </div>
         </div>
       </div>
     </div>
@@ -116,7 +167,7 @@
       <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
     <div class="footer-copyright">
-      This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+      This footer is made with <i class="fas fa-heart"></i>
     </div>
   </div>
 </body>

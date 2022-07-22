@@ -1,7 +1,7 @@
 body {
   /* background-color: #FCF8E8; */
   /* background: linear-gradient(#F0EBE3, #E4DCCF); */
-  background-color: #F0EBE3;
+  background-color: #F9F9F9;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -9,8 +9,26 @@ body {
   color: #413F42;
 }
 
+.skill {
+  border-radius: 520px;
+}
+
 h2 {
   margin-bottom: 0;
-  background-color: #ada8bb;
+  background-color: #a5caa8;
   color: white
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transition: opacity 2s ease-out, transform 1s;
+}
+
+.translate {
+  transform: translate(20px);
+  visibility: visible;
 }
