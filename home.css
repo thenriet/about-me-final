@@ -3,20 +3,28 @@ body {
   /* background: linear-gradient(#F0EBE3, #E4DCCF); */
   background-color: #F9F9F9;
   font-family: 'Oswald', sans-serif;
+  background-image: url("ordi.png");
+  background-repeat: repeat;
+}
+
+.round {
+  border-bottom-left-radius: 70px 80px;
+  border-bottom-right-radius: 70px 80px;
 }
 
 .container {
   color: #413F42;
+  position: relative;
+  right: 60px
 }
 
-.skill {
-  border-radius: 520px;
-}
 
 h2 {
   margin-bottom: 0;
   background-color: #a5caa8;
-  color: white
+  color: white;
+  border-top-left-radius: 70px 80px;
+  border-top-right-radius: 70px 80px;
 }
 
 .fade-in {
@@ -29,6 +37,14 @@ h2 {
 }
 
 .translate {
-  transform: translate(20px);
+  transform: translate(60px);
   visibility: visible;
+}
+
+p {
+  font-size: 25;
+}
+
+.description {
+  font-size: 20;
 }

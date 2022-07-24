@@ -28,10 +28,9 @@
       Faisons connaissance...<br /><br />
       <br /><br />
       <br /><br />
-      <i class="fa-solid fa-arrow-down-long"></i>
     </h1>
   </div>
-  <nav class="navbar navbar-expand-lg sticky-top">
+  <nav class="navbar navbar-expand-lg sticky-top flex-sm-column">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,6 +44,12 @@
             <a class="nav-link normal" href="#about">Qui suis-je ?</a>
           </li>
           <li class="nav-item pe-5">
+            <a class="nav-link normal" href="#">
+              <img src="logo-thomas2.png"
+              style="height: 40px;"/>
+            </a>
+          </li>
+          <li class="nav-item pe-5">
             <a class="nav-link normal" href="#skills">Compétences</a>
           </li>
           <li class="nav-item">
@@ -55,28 +60,26 @@
     </div>
   </nav>
   <div class="container">
-    <div class="about-section fade-in">
-      <h1 class="text-center p-5" id="about">Qui suis-je ?</h1>
+    <div class="about-section fade-in" id="about">
+      <h1 class="title text-center text-decoration-underline p-5">Qui suis-je ?</h1>
       <div class="about d-flex align-items-center justify-content-center">
         <img class="avatar mx-5" src="developer-image.jpg" alt="">
-        <p class="p-5 align-self-center" style="font-size:25">
+        <p class="p-5 align-self-center">
           Amiénois d'origine, j'ai déposé mes valises à Lille tout
           récemment. <br />
           Je viens de compléter une formation de
-          développeur web full stack au Wagon.<br /><br />
-          Cherchant à progresser sans cesse, chaque semaine
-          j'approfondis mes connaissances sur Rails mais aussi en
-          Javascript.
+          développeur Web Full Stack au Wagon.<br /><br />
+          Véritablement passionné par la programmation, je cherche à progresser sans cesse : à la fois en approfondissant les langages et fammeworks qui me sont déjà familiers mais aussi en en découvrant de nouveaux.
         </p>
       </div>
     </div>
     <div class="skills-section d-flex flex-column">
-      <h1 class="text-center p-5 fade-in" id="skills">Compétences</h1>
+      <h1 class="text-center text-decoration-underline p-5 fade-in " id="skills">Compétences</h1>
       <div class="skill d-flex flex-column mb-4" id="collaboration">
         <h2 class="text-center p-3">
           Collaboration
         </h2>
-        <div class="collab-items d-flex align-items-center justify-content-around mb-5" style="font-size:40px; background-color: white;">
+        <div class="round collab-items d-flex flex-wrap align-items-center justify-content-around mb-5" style="font-size:40px; background-color: white;">
           <div class="d-flex flex-column align-items-center mb-4">
             <a href="#"><i class="fab fa-github px-5 pt-5" style="color:black"></i></a>
             <p>Git</p>
@@ -89,13 +92,16 @@
             <a href="#"><i class="fa-brands fa-slack px-5 pt-5" style="color:powderblue"></i></a>
             <p>Slack</p>
           </div>
+          <div>
+            <p class=" description px-3 text-center">Le travail d'équipe est une dimension incontournable du travail de développeur. Assurer une communication efficace entre les membres d'une équipe passe par la maitrise de différentes applications de collaboration.</p>
+          </div>
         </div>
       </div>
       <div class="skill fade-in d-flex flex-column mb-4" id="conception">
         <h2 class="text-center p-3">
           Conception
         </h2>
-        <div class="conception-items d-flex align-items-center justify-content-around mb-5" style="font-size:40px; background-color: white;">
+        <div class="round conception-items d-flex flex-wrap align-items-center justify-content-around mb-5" style="font-size:40px; background-color: white;">
           <div class="d-flex flex-column align-items-center mb-4">
             <a href="#"><i class="fa-brands fa-figma px-5 pt-5" style="color:rgb(199, 86, 11)"></i></a>
             <p>Figma</p>
@@ -104,6 +110,9 @@
             <a href="#"><i class="fa-solid fa-database px-5 pt-5" style="color:orange"></i></a>
             <p>SQL</p>
           </div>
+          <div>
+            <p class=" description px-3 text-center">Avant de se lancer corps et âme dans le dur, c'est-à-dire le code, il est nécessaire d'établir un plan. Concevoir un projet d'application web passe à la fois par l'utilisation d'un outil de design d'interface mais aussi par la maîtrise d'un langage destiné à l'expoitation de base de données relationnelles.</p>
+          </div>
 
         </div>
       </div>
@@ -111,7 +120,7 @@
         <h2 class="text-center p-3">
           Développement
         </h2>
-        <div class="dev-items d-flex flex-wrap align-items-center justify-content-around mb-4" style="font-size:40px; background-color: white;">
+        <div class="round dev-items d-flex flex-wrap align-items-center justify-content-around mb-4" style="font-size:40px; background-color: white;">
           <div class="d-flex flex-column align-items-center mb-4 mx-5 ">
             <a href="#"><i class="fa-brands fa-html5 px-5 pt-5" style="color:rgb(207, 63, 27)"></i></a>
             <p>HTML</p>
@@ -145,17 +154,25 @@
             <a href="#"><i class="fa-brands fa-bootstrap px-5 pt-5" style="color:#7836F9"></i></a>
             <p>Bootstrap</p>
           </div>
+          <div>
+            <p class=" description px-3 text-center">Ce sont les différents langages et frameworks que j'utilise lors du développement d'une application Web. Cette liste est destinée à évoluer au fur et à mesure de mes découvertes et coups de coeur <i class="fas fa-heart"></i>.<br><br>
+              <i>PS : J'apprécie particulièrement le Javascript (Vanilla) en ce moment !</i></p>
+          </div>
         </div>
       </div>
       <div class="skill fade-in d-flex flex-column mb-4" id="prod">
         <h2 class="text-center p-3">
           Production
         </h2>
-        <div class="production-items d-flex align-items-center justify-content-around mb-4" style="font-size:40px; background-color: white;">
+        <div class="round production-items d-flex align-items-center justify-content-around mb-4" style="font-size:40px; background-color: white;">
           <div class="d-flex flex-column align-items-center justify-content-center mb-4">
             <a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
               style="height: 90px; padding-top: 3rem; padding-right: 3rem; padding-left: 3rem;" /></a>
             <p>Heroku</p>
+            <div>
+              <p class=" description px-3 text-center">Afin de rendre une application web accessible à ses futurs utilisateurs, il peut être pratique de passer par un service de cloud computing.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -163,8 +180,11 @@
   </div>
   <div class="footer mt-5">
     <div class="footer-links">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/thenriet" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tom-henriet/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+      Thomas Henriet - Tous droits réservés
     </div>
     <div class="footer-copyright">
       This footer is made with <i class="fas fa-heart"></i>

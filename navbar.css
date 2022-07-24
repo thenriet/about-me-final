@@ -1,6 +1,7 @@
 .navbar {
   justify-content: space-between;
   background: #364639;
+  padding: 0px;
 }
 
 .navbar li a {
@@ -12,7 +13,7 @@
 
 .grow {
   transition: transform 1s;
-  transform: scale(1.25, 1.25);
+  transform: scale(1.15, 1.15);
 
 }
 
