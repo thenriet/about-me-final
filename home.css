@@ -7,17 +7,31 @@ body {
   background-repeat: repeat;
 }
 
+
+#wagon {
+  text-decoration: none;
+  color: rgb(91, 196, 144);
+}
+
+#wagon:hover {
+  color: rgb(70, 152, 111);
+}
+
 .round {
   border-bottom-left-radius: 70px 80px;
   border-bottom-right-radius: 70px 80px;
+  box-shadow: 1px 1px 1px #dad8d8;
 }
 
 .container {
   color: #413F42;
   position: relative;
-  right: 60px
+  right: 100px
 }
 
+.description {
+  font-size: 20;
+}
 
 h2 {
   margin-bottom: 0;
@@ -26,6 +40,18 @@ h2 {
   border-top-left-radius: 70px 80px;
   border-top-right-radius: 70px 80px;
 }
+
+p {
+  font-size: 25;
+}
+
+button {
+  border: none;
+  background-color: #F9F9F9;
+  margin-left: 1rem;
+}
+
+/* animations */
 
 .fade-in {
   opacity: 0;
@@ -37,14 +63,6 @@ h2 {
 }
 
 .translate {
-  transform: translate(60px);
+  transform: translate(100px);
   visibility: visible;
-}
-
-p {
-  font-size: 25;
-}
-
-.description {
-  font-size: 20;
 }
