@@ -5,7 +5,10 @@ grow = (e) => {
   e.target.classList.toggle('grow')
 }
 
-let nav = navItems.forEach(item => {
-  item.addEventListener("mouseenter", grow, false);
-  item.addEventListener("mouseleave", grow, false);
-})
+function eventHandler() {
+    navItems.forEach(item => {
+      item.addEventListener("mouseenter", grow, false);
+      item.addEventListener("mouseleave", grow, false);
+    })
+}
+eventHandler();

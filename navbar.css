@@ -8,16 +8,27 @@
   font-size: 1.5rem;
   text-transform: uppercase;
   color: white;
-
 }
 
-.grow {
-  transition: transform 1s;
-  transform: scale(1.15, 1.15);
-
+.navbar li a:hover {
+  color: white
 }
 
-.normal {
-  transition: transform 1s;
-  transform: scale(1, 1);
+.nav-link:focus {
+  color: white
+}
+
+@media only screen and (min-width : 992px) {
+
+  .grow {
+    transition: transform 1s;
+    transform: scale(1.15, 1.15);
+    color : white
+
+  }
+
+  .normal {
+    transition: transform 1s;
+    transform: scale(1, 1);
+  }
 }

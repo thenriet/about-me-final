@@ -14,7 +14,7 @@ function handleIntersection(entries) {
       entry.target.classList.add('fade-in-visible')
       entry.target.classList.add('translate')
     } else {
-      entry.target.classList.remove('fade-in visible')
+      entry.target.classList.remove('fade-in-visible')
     }
   });
 }
