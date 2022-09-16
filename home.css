@@ -25,7 +25,8 @@ body {
 .container {
   color: #413F42;
   position: relative;
-  right: 100px
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .description {
@@ -50,9 +51,33 @@ button {
   margin-left: 1rem;
 }
 
+li.nav-item {
+  padding-right: 3rem;
+}
+
+li.nav-item:last-child {
+  padding-right: 0;
+}
+
+.scroll-down {
+  transform: translateY(200%);
+}
+
+@media only screen and (max-width: 991px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li.nav-item {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
 /* animations */
 
-.fade-in {
+/* .fade-in {
   opacity: 0;
 }
 
@@ -64,4 +89,4 @@ button {
 .translate {
   transform: translate(100px);
   visibility: visible;
-}
+} */
