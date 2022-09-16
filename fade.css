@@ -1,6 +1,6 @@
 .box {
     transform: translateX(200%);
-    transition: transform 0.9s ease-in-out;
+    transition: transform 0.7s ease-in-out;
 }
 
 .box:nth-of-type(even) {
