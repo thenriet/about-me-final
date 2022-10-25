@@ -1,4 +1,4 @@
-const targetAbout = document.querySelector('.about-section');
+/* const targetAbout = document.querySelector('.about-section');
 const targetSkills = document.querySelector('#skills');
 const targetCollaboration = document.querySelector('#collaboration');
 const targetConception = document.querySelector('#conception');
@@ -28,3 +28,4 @@ observer.observe(targetDev);
 observer.observe(targetProd);
 observer.observe(targetContact);
 observer.observe(targetTopLink);
+ */
